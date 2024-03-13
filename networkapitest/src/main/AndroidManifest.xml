@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wizarpos.aidl.tester">
+
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CLOUDPOS_INSTALL_SILENCE" />
+    <uses-permission android:name="android.permission.CONNECTIVITY_INTERNAL" />
+    <!-- 固定屏幕 -->
+    <uses-permission android:name="android.permission.MANAGE_ACTIVITY_STACKS"/>
+
+    <!-- Update user key of pin permission -->
+    <uses-permission android:name="android.permission.CLOUDPOS_PIN_UPDATE_USER_KEY"/>
+    <!-- Update master key of pin permission -->
+    <uses-permission android:name="android.permission.CLOUDPOS_PIN_UPDATE_MASTER_KEY"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
